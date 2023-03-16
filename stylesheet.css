@@ -45,14 +45,12 @@ nav ul{
   
 nav ul li a{
     margin:30px;
-    font-family:myriad pro regular;
     color:#505050;
     font-size: 15px;
     font-weight:700;
 }
  
 .logo{
-    font-family:RoadTest;
     color:#000000;
     font-size: 22px;
     font-weight: bold;
@@ -83,7 +81,7 @@ a {
     background-image: url("gambar-arsitek.JPG");
     background-color: #ffffff;
     background-size: cover;
-    color: #ffffff;
+    font-color: black;
     text-align: left;
 
 }
