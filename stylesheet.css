@@ -1,0 +1,366 @@
+* {
+    box-sizing: border-box;
+    font-family: "Helvetica";
+  }
+
+
+body {
+    margin: 0;
+
+  }
+  
+a {
+    text-decoration: none;
+  }
+.container{
+    width: 100%;
+    height: 500px;
+    padding:0 15px;
+    margin: 0 auto;
+}
+.top-wrapper{
+    padding: 150px 0 100px 400px;
+    background-image: url(gambar-arsitek.JPG);
+    background-color: black;
+    background-size: cover;
+    color: black;
+    text-align: left;
+}
+.top-wrapper h1{
+    font-size: 70px;
+    font-family: helvetica;
+    font-weight: bold;
+    margin-right: 250px;
+}
+.container span{
+    color: #0104e5;
+}
+.top-wrapper p{
+    width: 440px;
+    padding-bottom: 100px;
+    font-weight: bold;
+
+}
+.explore{
+    padding: 20px 45px;
+    border-radius: 50px;
+    color: white;
+    background-color: #0104e5;
+    cursor: pointer ;
+    
+}
+.explore:hover{
+background-color: #00028d;
+}
+ 
+.services{
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    box-shadow: inset 0 0 0 1000px rgba(1,4,229,0.7);;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image:url("images/service-bg.jpg");
+    }
+    
+    .services-text p{
+        font-family: helvetica;
+        font-weight:bold;
+        color:#fcfcfc;
+        font-size:60px;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-left:200px;
+    }
+    
+    .box-container{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        margin-left:200px;
+        margin-right:200px;
+    }
+    @media(max-width:750){
+        .box-container{
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+            margin:0px
+            
+        } 
+    }
+    
+    .box{
+        width: 300px;
+        height:320px;
+        align-items: left;
+        justify-content: left;
+        display:flex;
+        flex-direction: column;
+        margin: 10px 4px;
+    }
+    
+    .box p:nth-child(2){
+        color:#ffffff;
+        font-family: helvetica;
+        font-size: 28px;
+        line-height:0px;
+        font-weight:bold;
+    }
+     
+    .box p:nth-child(3){
+        font-family: helvetica;
+        color:#ffffff;
+        text-align:left;
+        width: 230px;
+        margin:10px 0px 20px 0px;
+        line-height:25px;
+    }
+     
+    .box button{
+        width:100px;
+        height:30px;
+        background-color:#ffffff;
+        border:none;
+        outline: none;
+        border-radius:5px;
+        cursor:pointer;
+        position: relative;
+    }
+    
+    .box button span
+    {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .box button span:after{
+        content: '\00bb';
+        position: relative;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .box button:hover span{
+        padding-right: 10px;
+    }
+    
+    .box button:hover span:after{
+        opacity: 1;
+        right: 0;
+    }
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      
+      .right-content {
+        width: 50%;
+      }
+    
+      .left-content {
+        width: 40%;
+      } 
+    
+      .right-content img {
+        width: 100%;
+        height: 100vh;
+        
+      }
+      .left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .left-content p {
+        margin-top: -5px;
+        margin-bottom: 100px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+      }
+      .left-content h1 {
+        margin-bottom: 50px;
+        margin-left: -70px;
+        letter-spacing: 2px;
+        font-size: 35px
+      }
+      .left-content h3 {
+        margin-left: -45px;
+        letter-spacing: 1px;
+      }
+      .button {
+        margin-left: -80px;
+        display: inline-block;
+        background-color: white;
+        padding: 10px 60px;
+        color: #0104e5;
+        border: 2px solid #0104e5;
+        border-radius: 50px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .button:hover {
+        background-color: #0e4c8e;
+        color: #fff;
+      }
+    
+      .icon {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 500px;
+        border: 1px solid #75757f;
+        background-color: white;
+        padding: 10px 30px;
+    
+      }
+      
+      .fa-arrow-right-to-bracket {
+        font-size: 30px;
+        color: #030439;
+      }
+      
+
+.footer-wrapper {
+    cursor: default;
+    max-width: 100%;
+    height: 160px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F5F5F5;
+}
+.footer-container{
+    float:left;
+    width:80%;
+    max-width: 100%;
+    height: 145px;
+}
+
+.footer-list ul{
+    text-align: left;
+    margin: 0;
+    padding: 0 0;
+}
+
+.footer-list {
+    float:left;
+    height: 140px;
+    width: 15%;
+    padding: 10px 20px;
+    margin: auto 10;
+}
+
+.li11 {
+    font-weight: bold;
+    padding-bottom: 5px;
+    list-style:none;
+}
+
+.li22 {
+    max-width: 100%;
+    font-size: 15px;
+    list-style: none;
+    padding-top: 5px;
+}
+.li22:hover {
+    font-weight: bold;
+    cursor: pointer;  
+}
+
+.footer-right{
+    float:right;
+}
+
+.logo-right{
+    text-align: right;
+    list-style: none;
+    margin-top: 60px;
+    padding-right: 10px;
+}
+.logo-icon-right i{
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.project{
+    font-size: 10px;
+    text-align: right;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Helvetica:400,700');
+
+.contact-form {
+  background-color: #0005a9 ;
+  background-size: cover;
+  font-family: Helvetica;
+  padding: 106px 0;
+  text-align: center;
+} 
+.contact-form h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 24px;
+}
+    
+.form-request {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+input[type="email"]{
+  width: 55%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid;
+  padding: 18px 0 12.8px;
+  text-align: left;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: 350;
+  line-height: 1.5;
+  color: white;
+  outline: none;
+  
+}
+
+button {    
+  all: unset;
+  margin-top: 38.4px;
+  margin-left: 50px;
+  background: white;
+  border: 2px solid white;
+  padding:  14px 43px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+button span {
+  display: inline-block;
+  transition: all 300ms ease;
+  z-index: 2;
+}
+
+button:hover{
+  background: #d73851;
+  border: 1px solid #d73851;
+}
