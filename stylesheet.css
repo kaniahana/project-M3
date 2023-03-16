@@ -1,18 +1,78 @@
+@charset "utf-8";
+/* CSS Document*/
 * {
     box-sizing: border-box;
-    font-family: "Helvetica";
+  }
+  
+  *{
+    font-family: Helvetica;
   }
 
+body{
+    background-color:#ffffff;
+    margin:0px;
+    padding:0px;
+}
+ 
+ul{
+    list-style:none;
+}
+ 
+a{
+    text-decoration:none;
+    font-family:helvetica;
+}
+ 
+section{
+    width:100%;
+    height:95vh;
+    position: relative;
+}
+ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+    background-color:#FFFFFF;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    padding:0px 5%;
+     
+}
+nav ul{
+    display: flex;
+}
+  
+nav ul li a{
+    margin:30px;
+    font-family:myriad pro regular;
+    color:#505050;
+    font-size: 15px;
+    font-weight:700;
+}
+ 
+.logo{
+    font-family:RoadTest;
+    color:#000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+ 
+.active{
+    color:#2d2a2a;
+    font-weight:bold;
+}
 
 body {
     margin: 0;
-
+    
+    font-family: "Helvetica";
   }
   
 a {
     text-decoration: none;
   }
-.container{
+.containermain{
     width: 100%;
     height: 500px;
     padding:0 15px;
@@ -25,6 +85,7 @@ a {
     background-size: cover;
     color: black;
     text-align: left;
+
 }
 .top-wrapper h1{
     font-size: 70px;
@@ -52,19 +113,21 @@ a {
 .explore:hover{
 background-color: #00028d;
 }
- 
+
+
+
 .services{
-    top: 0px;
-    right: 0px;
-    left: 0px;
+    margin-top: 130px;
+    
     box-shadow: inset 0 0 0 1000px rgba(1,4,229,0.7);;
-    position:absolute;
+    position:relative;
     background-repeat: no-repeat;
     background-size:cover;
     background-image:url("service-bg.jpg");
     }
     
     .services-text p{
+        
         font-family: helvetica;
         font-weight:bold;
         color:#fcfcfc;
@@ -72,15 +135,18 @@ background-color: #00028d;
         text-align: left;
         margin-bottom: 10px;
         margin-left:200px;
+        top:100px;
     }
     
     .box-container{
+        height:466px;
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content:space-between;
         margin-left:200px;
         margin-right:200px;
+        margin-top: 50px;
     }
     @media(max-width:750){
         .box-container{
@@ -100,12 +166,13 @@ background-color: #00028d;
         flex-direction: column;
         margin: 10px 4px;
     }
+
     
     .box p:nth-child(2){
         color:#ffffff;
         font-family: helvetica;
         font-size: 28px;
-        line-height:0px;
+        line-height:25px;
         font-weight:bold;
     }
      
@@ -154,10 +221,12 @@ background-color: #00028d;
         opacity: 1;
         right: 0;
     }
+
     .container {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 100px;
       }
       
       .right-content {
@@ -185,6 +254,7 @@ background-color: #00028d;
         margin-bottom: 100px;
         letter-spacing: 1px;
         line-height: 1.5;
+        margin-left:100px;
       }
       .left-content h1 {
         margin-bottom: 50px;
@@ -230,137 +300,138 @@ background-color: #00028d;
         font-size: 30px;
         color: #030439;
       }
+
+      .footer-wrapper {
+        cursor: default;
+        max-width: 100%;
+        height: 160px;
+        padding-top:15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: #F5F5F5;
+    }
+    .footer-container{
+        float:left;
+        width:80%;
+        max-width: 100%;
+        height: 145px;
+    }
+    
+    .footer-list ul{
+        text-align: left;
+        margin: 0;
+        padding: 0 0;
+    }
+    
+    .footer-list {
+        float:left;
+        height: 140px;
+        width: 15%;
+        padding: 10px 20px;
+        margin: auto 10;
+    }
+    
+    .li11 {
+        font-weight: bold;
+        padding-bottom: 5px;
+        list-style:none;
+    }
+    
+    .li22 {
+        max-width: 100%;
+        font-size: 15px;
+        list-style: none;
+        padding-top: 5px;
+    }
+    .li22:hover {
+        font-weight: bold;
+        cursor: pointer;  
+    }
+    
+    .footer-right{
+        float:right;
+    }
+    
+    .logo-right{
+        text-align: right;
+        list-style: none;
+        margin-top: 60px;
+        padding-right: 10px;
+    }
+    .logo-icon-right i{
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    .project{
+        font-size: 10px;
+        text-align: right;
+    }
+
+    .contact-form {
+        background-color: #0005a9 ;
+        background-size: cover;
+        font-family: Helvetica;
+        padding: 150px 0px;
+        margin-top:auto;
+        text-align: center;
+      } 
+      .contact-form h1 {
+        font-size: 45px;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 0 24px;
+      }
+          
+      .form-request {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+      
+      input[type="email"]{
+        width: 55%;
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid;
+        padding: 18px 0 12.8px;
+        text-align: left;
+        font-size: 20px;
+        font-family: inherit;
+        font-weight: 350;
+        line-height: 1.5;
+        color: white;
+        outline: none;
+        
+      }
+      
+      .buttonreq {    
+        all: unset;
+        margin-top: 38.4px;
+        margin-left: 50px;
+        background: white;
+        border: 2px solid white;
+        padding:  14px 43px;
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        position: relative;
+        transition: all 300ms ease;
+      }
+      
+      .buttonreq span {
+        display: inline-block;
+        transition: all 300ms ease;
+        z-index: 2;
+      }
+      
+      .buttonreq:hover{
+        background: #d73851;
+        border: 1px solid #d73851;
+      }
+
+
       
 
-.footer-wrapper {
-    cursor: default;
-    max-width: 100%;
-    height: 160px;
-    padding-top:15px;
-    padding-bottom: 15px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color: #F5F5F5;
-}
-.footer-container{
-    float:left;
-    width:80%;
-    max-width: 100%;
-    height: 145px;
-}
-
-.footer-list ul{
-    text-align: left;
-    margin: 0;
-    padding: 0 0;
-}
-
-.footer-list {
-    float:left;
-    height: 140px;
-    width: 15%;
-    padding: 10px 20px;
-    margin: auto 10;
-}
-
-.li11 {
-    font-weight: bold;
-    padding-bottom: 5px;
-    list-style:none;
-}
-
-.li22 {
-    max-width: 100%;
-    font-size: 15px;
-    list-style: none;
-    padding-top: 5px;
-}
-.li22:hover {
-    font-weight: bold;
-    cursor: pointer;  
-}
-
-.footer-right{
-    float:right;
-}
-
-.logo-right{
-    text-align: right;
-    list-style: none;
-    margin-top: 60px;
-    padding-right: 10px;
-}
-.logo-icon-right i{
-    cursor: pointer;
-    font-size: 24px;
-}
-
-.project{
-    font-size: 10px;
-    text-align: right;
-}
-
-
-@import url('https://fonts.googleapis.com/css?family=Helvetica:400,700');
-
-.contact-form {
-  background-color: #0005a9 ;
-  background-size: cover;
-  font-family: Helvetica;
-  padding: 106px 0;
-  text-align: center;
-} 
-.contact-form h1 {
-  font-size: 45px;
-  font-weight: 600;
-  color: #fff;
-  margin: 0 0 24px;
-}
-    
-.form-request {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-}
-
-input[type="email"]{
-  width: 55%;
-  background: transparent;
-  border: 0;
-  border-bottom: 1px solid;
-  padding: 18px 0 12.8px;
-  text-align: left;
-  font-size: 20px;
-  font-family: inherit;
-  font-weight: 350;
-  line-height: 1.5;
-  color: white;
-  outline: none;
-  
-}
-
-button {    
-  all: unset;
-  margin-top: 38.4px;
-  margin-left: 50px;
-  background: white;
-  border: 2px solid white;
-  padding:  14px 43px;
-  border-radius: 50px;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 700;
-  position: relative;
-  transition: all 300ms ease;
-}
-
-button span {
-  display: inline-block;
-  transition: all 300ms ease;
-  z-index: 2;
-}
-
-button:hover{
-  background: #d73851;
-  border: 1px solid #d73851;
-}
