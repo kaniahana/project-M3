@@ -81,9 +81,9 @@ a {
 .top-wrapper{
     padding: 150px 0 100px 400px;
     background-image: url("gambar-arsitek.JPG");
-    
+    background-color: #ffffff;
     background-size: cover;
-    
+    color: #ffffff;
     text-align: left;
 
 }
