@@ -1,194 +1,47 @@
 
+
+
 @media all and (max-width: 1000px ) {
+    .top-wrapper {
+      padding: 20px;
+    }
   
+    .top-wrapper h1 {
+      font-size:50px;
+      margin-top:100px;
+      margin-left:100px;
+      font-size: 60px;
+    }
+    .top-wrapper p{
+      margin-left:100px;
+      font-size: 10px;
+      width:50%;
 
-      .top-wrapper {
-        padding: 20px;
-      }
-    
-      .top-wrapper h1 {
-        font-size:60px;
-        margin-top:100px;
-        margin-left:100px;
-      }
-      .top-wrapper p{
-        margin-left:100px;
-
-      }
-      .tombol {
-        width: 80%;
-        margin-left: 100px;
-
-      }
-
-      .left-content {
-        width: 50%;
-      }
-      .right-content {
-          width: 50%;
-        }
-        .button:hover {
-          width: 50%;
-        }
-        .button {
-          width: 50%;
-        }
-        .icon {
-          width: auto;
-        }
-
-        .footer-wrapper {
-          height: 145px;
-      }
-      .footer-container{
-          float:left;
-          max-width: 100%;
-          height: 145px;
-          margin-left: 25px;
-      }
-  
-      .footer-list {
-          float:left;
-          height: 140px;
-          width: 15%;
-          padding: 10px 10px;
-          margin: auto 10;
-      }
-  
-      .li11 {
-          font-size:13px;
-      }
-      
-      .li22 {
-          font-size: 13px;
-      
-      }
-
-       .contact-form {
-    padding: 20px;
-  }
-
-  .contact-form h1 {
-    font-size: 32px;
-  }
-
-  .form-request {
-    width: 100%;
-  }
-
-  button {
-    width: 80%;
-    margin-left: 0px;
-  }
-
-  input[type="email"]{
-    width: 100%;
-  }
-
-  .form-request > * {
-    font-size: 20px;
-  }
+    }
+    .tombol {
+      width: 80%;
+      margin-left: 100px;
 
     }
 
+  }
+
 @media all and (max-width: 670px) {
-  button {
-    flex-basis: 0;
-  }
-  
-  .top-wrapper {
-    padding: 20px;
-  }
-
-  .top-wrapper h1 {
-    margin-left:50px;
-    font-size: 50px;
-    margin-right:55px;
-  }
-  .top-wrapper p{
-    margin-left:50px;
-  }
-
-  button {
-    width: 70%;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .footer-wrapper {
-    height: 130px;
-}
-.footer-container{
-    float:left;
-    width: 95%;
-    max-width: 100%;
-    height: 70px;
-    margin-left: 10px;
-    margin-right: 10px;
-} 
-.footer-list {
-    float:left;
-    height: 100px;
-    width: 20%;
-    padding: 0;
-    margin: 0 0;
-}
-
-.li11 {
-    text-align: center;
-    font-size:8px;
-}
-
-.li22 {
-    text-align: center;
-    font-size: 8px;
-
-}
-
-.footer-right{
-    width:40px;
-    height: 20px;
-    margin: 0 0;
-    padding: 0;
-
-}
-
-.logo-right{
-    list-style: none;
-    padding-right: 5px;
-    margin:0 0;
-    margin-top: 10px;
-}
-.logo-icon-right i{
-    cursor: pointer;
-    text-align: right;
-    font-size: 10px;
-}
-
-.project{
-    font-size: 5px;
-    text-align: right;
-}
-
-.form-request {
-  width: 100%;
-}
-
 button {
   flex-basis: 0;
 }
 
-
-.contact-form {
+.top-wrapper {
   padding: 20px;
 }
 
-.contact-form h1 {
-  font-size: 24px;
+.top-wrapper h1 {
+  margin-left:50px;
+  font-size: 50px;
+  margin-right:55px;
 }
-
-.form-request {
-  width: 100%;
+.top-wrapper p{
+  margin-left:50px;
 }
 
 button {
@@ -197,13 +50,178 @@ button {
   text-align: center;
 }
 
-input[type="email"]{
-  width: 100%;
 }
 
-.form-request > * {
-  font-size: 18px;
+/*main-1*/
+@media all and (max-width: 1000px) {
+    .services{
+
+        position:relative;
+        }
+        
+        .services-text p{
+            font-size:30px;
+            text-align: left;
+            margin-bottom: 0px;
+            margin-left:20px;
+            top:0px;
+        }
+        
+        .box-container{
+            height:50%;
+            display:flex;
+            flex-direction: row-reverse;
+            margin-left:0px;    }
+
+            .box{
+                width: 100px;
+                height:140px;
+                
+                margin: 10px 4px;
+            }
+        
+            .box p:nth-child(2){
+                font-size: 14px;
+                line-height:15px;
+                margin:0px;
+            }
+
+            .box p:nth-child(3){
+                font-size:10px;
+                line-height:15px;
+                margin:0px;
+            }
+
+
 }
 
-  }
+/*main-2*/
+ /* responsive desktop */
+ @media all and (max-width: 1000px) {
+    .right-content {
+      width: 50%;
+    }
+
+    .left-content {
+      width: 50%;
+    }
+    .left-content p {
+    font-size: 10px;
+    margin-left:10px;
+    text-align:center;
+        }
+    .left-content h3 {
+        font-size: 18px;
+        margin-left:10px;
+        text-align:center;
+            }
+    .left-content h1 {
+    font-size: 22px;
+    margin-left:10px;
+    text-align:center;
+        }
+
+    .left-content button:hover {
+      width: 50%;
+    }
+
+    .left-content button {
+      width: 50%;
+      font-size:12px;
+      align-items: center;
+    }
+    .icon {
+      width: auto;
+    }}
+
+
+
+/*footer ok*/
+@media all and (max-width: 1000px) {
+    .footer-wrapper {
+        height: 145px;
+    }
+    .footer-container{
+        float:left;
+        max-width: 100%;
+        height: 145px;
+        margin-left: 25px;
+    }
+
+    .footer-list {
+        float:left;
+        height: 140px;
+        width: 15%;
+        padding: 10px 10px;
+        margin: auto 10;
+    }
+
+    .li11 {
+        font-size:13px;
+    }
+    
+    .li22 {
+        font-size: 13px;
+    
+    }
+    
+
+}
+@media all and (max-width: 670px){
+    .footer-wrapper {
+        height: 130px;
+    }
+    .footer-container{
+        float:left;
+        width: 95%;
+        max-width: 100%;
+        height: 70px;
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
+    .footer-list {
+        float:left;
+        height: 100px;
+        width: 20%;
+        padding: 0;
+        margin: 0 0;
+    }
+    
+    .li11 {
+        text-align: center;
+        font-size:8px;
+    }
+    
+    .li22 {
+        text-align: center;
+        font-size: 8px;
+    
+    }
+    
+    .footer-right{
+        width:40px;
+        height: 20px;
+        margin: 0 0;
+        padding: 0;
+
+    }
+
+    .logo-right{
+        list-style: none;
+        padding-right: 5px;
+        margin:0 0;
+        margin-top: 10px;
+    }
+    .logo-icon-right i{
+        cursor: pointer;
+        text-align: right;
+        font-size: 10px;
+    }
+    
+    .project{
+        font-size: 5px;
+        text-align: right;
+    }
+ 
+}
 
